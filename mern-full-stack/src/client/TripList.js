@@ -63,7 +63,7 @@ class TripList extends Component {
         // produce a User component for each user object
         const tripList = this.state.trips.map(u => (
             //map through each element in the array and set to the value received from the server
-            <User
+            <Trip
                 key={u._id}
                 id={u._id}
                 title={u.title}
@@ -83,7 +83,7 @@ class TripList extends Component {
                 <nav className="navbar">
                     <h1 className="navbar-item title is-1 has-text-primary">List of trips</h1>
                     {/*when this button is pressed, CreateUser component will be rendered by using React Router*/}
-                    <Link to={'/create-user'} className="navbar-item navbar-end">
+                    <Link to={'/create-trip'} className="navbar-item navbar-end">
                         <button className="button is-warning" type="button">Add new trip</button>
                     </Link>
                 </nav>
