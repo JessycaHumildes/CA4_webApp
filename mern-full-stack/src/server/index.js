@@ -7,6 +7,8 @@ const server = express();
 // the value for dbname should match your database name
 const dbname = 'trips';
 
+
+
 // serve files from the dist directory
 server.use(express.static('dist'));
 

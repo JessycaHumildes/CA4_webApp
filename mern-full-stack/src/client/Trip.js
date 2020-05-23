@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 class Trip extends React.Component {
   render() {
     return (
-      <div className="column is-2" style={{ padding: "20px" }}>
+      <div className="column is-2" style={{ padding: "2px" }}>
         <div className="card" style={{ borderRadius: "20px" }}>
           <div className="card-image">
             <figure className="image is-4by3">
