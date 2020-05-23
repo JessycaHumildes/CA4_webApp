@@ -81,7 +81,7 @@ class TripList extends Component {
             <div className="is-fluid">
                 {/*Navigation bar*/}
                 <nav className="navbar">
-                    <h1 className="navbar-item title is-1 has-text-primary">List of trips</h1>
+                    <h1 className="navbar-item title is-1 has-text-danger">List of trips</h1>
                     {/*when this button is pressed, CreateUser component will be rendered by using React Router*/}
                     <Link to={'/create-trip'} className="navbar-item navbar-end">
                         <button className="button is-warning" type="button">Add new trip</button>
@@ -95,7 +95,7 @@ class TripList extends Component {
                     </div>
                 </div>
                 {/*FOOTER*/}
-                <footer className="footer has-background-primary">
+                <footer className="footer has-background-danger">
                     <div className="content has-text-centered">
                         <p className="has-text-white-bis"><strong>Random User API</strong> styled with Bulma.</p>
                     </div>

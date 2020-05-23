@@ -52,7 +52,7 @@ class CreateTrip extends Component {
             <div className="is-fluid">
                 {/*on form submit call handleSubmit()*/}
                 <form onSubmit={this.handleSubmit}>
-                    <h2 className="title is-1 has-text-primary">Add New Trip</h2>
+                    <h2 className="title is-1 has-text-danger">Add New Trip</h2>
                     <hr />
                     {/*main container for input fields*/}
                     <div className="container">
@@ -95,7 +95,7 @@ class CreateTrip extends Component {
                         </div>
                     </div>
                     {/*SUBMIT BUTTON*/}
-                    <input className="button is-primary" type="submit" value="Submit" />
+                    <input className="button is-danger" type="submit" value="Submit" />
                     </div>
                 </form>
             </div>

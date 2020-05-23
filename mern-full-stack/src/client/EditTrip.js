@@ -73,7 +73,7 @@ class EditTrip extends Component {
             <div className="is-fluid">
                 {/*on form submit call handleSubmit()*/}
                 <form onSubmit={this.handleSubmit}>
-                    <h2 className="title is-1 has-text-primary">Edit Trip</h2>
+                    <h2 className="title is-1 has-text-danger">Edit Trip</h2>
                     <hr />
                     {/*main container for input fields*/}
                     <div className="container">
@@ -116,7 +116,7 @@ class EditTrip extends Component {
                             </div>
                         </div>
                         {/*SUBMIT BUTTON*/}
-                        <input className="button is-primary" type="submit" value="Submit" />
+                        <input className="button is-danger" type="submit" value="Submit" />
                     </div>
                 </form>
             </div>
