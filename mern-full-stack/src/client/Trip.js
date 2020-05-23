@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 class Trip extends React.Component {
   render() {
     return (
-      <div className="column is-2" style={{ padding: "2px" }}>
+      <div className="column is-2" style={{ padding: "10px" }}>
         <div className="card" style={{ borderRadius: "20px" }}>
           <div className="card-image">
             <figure className="image is-4by3">
@@ -19,7 +19,7 @@ class Trip extends React.Component {
               <div className="media-content">
                 <p className="title is-4 has-text-danger">{this.props.first}</p>
                 <hr/>
-                <p className="subtitle is-size-8">{this.props.quote}</p>
+                <p className="subtitle is-size-6">{this.props.quote}</p>
                 {/*delete the prop with requested id from the function invoked in the parent component*/}
                 <button className="button is-danger" type="button" onClick={() => {this.props.handleDelete(this.props.id);}}>
                   Delete

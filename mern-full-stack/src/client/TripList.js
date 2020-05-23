@@ -84,13 +84,13 @@ class TripList extends Component {
                     <h1 className="navbar-item title is-1 has-text-danger">List of trips</h1>
                     {/*when this button is pressed, CreateUser component will be rendered by using React Router*/}
                     <Link to={'/create-trip'} className="navbar-item navbar-end">
-                        <button className="button is-warning" type="button">Add new trip</button>
+                        <button className="button is-danger" type="button">Add new trip</button>
                     </Link>
                 </nav>
                 <hr />
                 {/*USER LIST*/}
                 <div>
-                    <div className="columns is-multiline">
+                    <div className="columns is-multiline is-centered" >
                         {tripList}
                     </div>
                 </div>
