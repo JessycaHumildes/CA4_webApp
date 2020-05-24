@@ -10,3 +10,9 @@ background-image: url(http://images6.fanpop.com/image/photos/40000000/Windmill-t
 background-size: cover;
 background-position: center center;
 }
+#is-fluid{
+
+    height: 100px;
+    width: 100px;
+    background: black;
+}

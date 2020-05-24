@@ -81,7 +81,7 @@ class TripList extends Component {
             <div className="is-fluid">
                 {/*Navigation bar*/}
                 <nav className="navbar">
-                    <h1 className="navbar-item title is-1 has-text-danger">List of trips</h1>
+                    <h1 className="navbar-item title  has-text-danger">List of trips</h1>
                     {/*when this button is pressed, CreateUser component will be rendered by using React Router*/}
                     <Link to={'/create-trip'} className="navbar-item navbar-end">
                         <button className="button is-danger" type="button">Add new trip</button>
@@ -94,6 +94,7 @@ class TripList extends Component {
                 </span>
                 <div className="nav-right nav-menu has-text-right">
                 <a href="#" className="nav-item is-active button is-link is-light" type="button" style={{ padding: "10px" }}>The Netherlands</a>
+                
                 <a href="#greece" className="nav-item is-active button is-info" type="button" style={{ padding: "10px" }}>Greece</a>
                 <a href="#france" className="nav-item is-active button is-primary"  type="button" style={{ padding: "10px" }}>France</a>
                 </div>

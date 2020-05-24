@@ -1,15 +1,13 @@
 import React from 'react';
 import { HashRouter, Route } from 'react-router-dom';
-
 //import required components
 import CreateTrip from './CreateTrip';
 import EditTrip from './EditTrip';
 import TripList from './TripList';
-;
 
 
 // this is the "main" component which sets up the React Router and respective routes
-const App = () => {
+const Greece = () => {
   return(
     <HashRouter>
       <div>
@@ -18,11 +16,11 @@ const App = () => {
         {/*pass the id through the EditUser component*/}
         <Route path="/edit-trip/:id" component={EditTrip}/>
         {/*set the path to create a new user to CreateUser component*/}
-        <Route path="/create-trip" component={CreateTrip}/>   
+        <Route path="/create-trip" component={CreateTrip}/>
+       
       </div>
     </HashRouter>
-
   );
 };
 
-export default App;
+export default Greece;
