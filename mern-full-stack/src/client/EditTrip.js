@@ -70,10 +70,11 @@ class EditTrip extends Component {
     render() {
         // remember that the name of the input fields should match the state
         return (
-            <div className="is-fluid">
+            <section className="hero hero-image is-fullheight-with-navbar">
+            <h2 className="title is-1 has-text-danger">Edit Trip</h2>
                 {/*on form submit call handleSubmit()*/}
-                <form onSubmit={this.handleSubmit}>
-                    <h2 className="title is-1 has-text-danger">Edit Trip</h2>
+                <form onSubmit={this.handleSubmit} className="hero-body container">
+                    
                     <hr />
                     {/*main container for input fields*/}
                     <div className="container">
@@ -119,7 +120,7 @@ class EditTrip extends Component {
                         <input className="button is-danger" type="submit" value="Submit" />
                     </div>
                 </form>
-            </div>
+            </section>
         );
     }
 }

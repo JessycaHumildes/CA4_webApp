@@ -11,7 +11,7 @@ class Trip extends React.Component {
         <div className="card" style={{ borderRadius: "10px" }}>
           <div className="card-image">
             <figure className="image is-4by3">
-              <img class="is-rounded" alt="Profile" src={this.props.image} />
+              <img className="is-rounded" alt="Profile" src={this.props.image} />
             </figure>
           </div>
           <div className="card-content">

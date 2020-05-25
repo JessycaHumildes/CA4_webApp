@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 //import the Link component to handle React Router
 import { Link } from 'react-router-dom';
 import Trip from './Trip';
+import Greece from './Greece';
 //Axios is a lightweight HTTP client based on the $http service within Angular.js
 //Axios provides support for request and response interceptors, transformers and auto-conversion to JSON
 // Use "npm install axios" command to install
@@ -79,25 +80,7 @@ class TripList extends Component {
         //return the list of users
         return (
             <div className="is-fluid">
-                {/*Navigation bar*/}
-                <nav className="navbar">
-                    <h1 className="navbar-item title  has-text-danger">List of trips</h1>
-                    {/*when this button is pressed, CreateUser component will be rendered by using React Router*/}
-                    <Link to={'/create-trip'} className="navbar-item navbar-end">
-                        <button className="button is-danger" type="button">Add new trip</button>
-                    </Link>
-                </nav>
-                <span className="nav-toggle " >
-                <span></span>
-                <span></span>
-                <span></span>
-                </span>
-                <div className="nav-right nav-menu has-text-right">
-                <a href="#" className="nav-item is-active button is-link is-light" type="button" style={{ padding: "10px" }}>The Netherlands</a>
-                
-                <a href="#greece" className="nav-item is-active button is-info" type="button" style={{ padding: "10px" }}>Greece</a>
-                <a href="#france" className="nav-item is-active button is-primary"  type="button" style={{ padding: "10px" }}>France</a>
-                </div>
+               <h1 className="navbar-item title  has-text-danger">List of trips</h1>
                 <hr />
                 {/*USER LIST*/}
                 <div>
@@ -105,12 +88,6 @@ class TripList extends Component {
                         {tripList}
                     </div>
                 </div>
-                {/*FOOTER*/}
-                <footer className="footer has-background-danger">
-                    <div className="content has-text-centered">
-                        <p className="has-text-white-bis"><strong>JHumildes</strong> styled with Bulma.</p>
-                    </div>
-                </footer>
             </div>
 
         );
