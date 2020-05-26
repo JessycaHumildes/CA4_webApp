@@ -13,7 +13,7 @@ import './app.css';
 import 'bulma/css/bulma.css';
 
 // this component will handle all elements in the users array
-class TripList extends Component {
+class Home extends Component {
     constructor(props) {
         super(props);
         // store the users array in the state
@@ -85,7 +85,7 @@ class TripList extends Component {
                 {/*USER LIST*/}
                 <div>
                     <div className="columns is-multiline is-centered " >
-                        {tripList}
+                        {home}
                     </div>
                 </div>
             </div>
@@ -94,4 +94,4 @@ class TripList extends Component {
     }
 }
 
-export default TripList;
+export default Home;

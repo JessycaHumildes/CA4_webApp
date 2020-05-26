@@ -1,12 +1,17 @@
 import React from 'react';
 import { HashRouter, Switch, Route, Link } from 'react-router-dom';
 
+
 //import required components
 import CreateTrip from './CreateTrip';
 import EditTrip from './EditTrip';
-import TripList from './TripList';
 import Greece from './Greece';
-import logo from './images/logo.png'
+import TripList from './TripList';
+import logo from './images/logo.png';
+import France from './France';
+import Netherlands from './Netherlands';
+import Home from './Home'
+
 
 
 // this is the "main" component which sets up the React Router and respective routes
@@ -39,7 +44,7 @@ const App = () => {
                         <button className="button is-primary" type="button">France</button>
                     </Link>
 
-                    <Link to={'/home'} className="navbar-item">
+                    <Link to={'/'} className="navbar-item">
                         <button className="button is-info" type="button">Home</button>
                     </Link>
 
@@ -56,8 +61,15 @@ const App = () => {
                     <Route path="/edit-trip/:id" component={EditTrip} />
                     {/*set the path to create a new user to CreateUser component*/}
                     <Route path="/create-trip" component={CreateTrip} />
-                    {/*set the path to create a new user to CreateUser component*/}
+                    {/*set the path to crListeate a new user to ListCreateUser component*/}
                     <Route path="/greece" exact component={Greece} />
+
+                     <Route path="/france" exact component={France} />
+
+                     <Route path="/netherlands" exact component={Netherlands} />
+
+                     <Route path="/home" exact component={Home} />
+
                 </Switch>
             </div>
             {/*FOOTER*/}
@@ -70,5 +82,4 @@ const App = () => {
 
     );
 };
-
 export default App;

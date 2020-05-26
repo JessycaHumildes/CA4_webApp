@@ -1,26 +1,29 @@
-import React from 'react';
-import { HashRouter, Route } from 'react-router-dom';
+import React, { Component } from 'react';
+import { HashRouter, Route, Link } from 'react-router-dom';
 //import required components
 import CreateTrip from './CreateTrip';
 import EditTrip from './EditTrip';
-import TripList from './TripList';
 
 
 // this is the "main" component which sets up the React Router and respective routes
-const France = () => {
-  return(
-    <HashRouter>
-      <div>
-        {/*SERVERSIDE: Link the routes to components*/}
-        <Route exact path="/" component={TripList}/>
-        {/*pass the id through the EditUser component*/}
-        <Route path="/edit-trip/:id" component={EditTrip}/>
-        {/*set the path to create a new user to CreateUser component*/}
-        <Route path="/create-trip" component={CreateTrip}/>
-       
-      </div>
-    </HashRouter>
-  );
-};
+class France extends Component {
+    render() {
+        return (
+           
+            <section className="hero is-bold is-light is-fullheight-with-navbar">
+                <div className="hero-body container is-background-info">
+                    <div className="columns">
+                        <div className="column is-three-fifths">
+                            <h2 className="subtitle">France</h2>
+                        </div>
+                        <div className="column">
+                            <img src="https://www.worldatlas.com/r/w1200-h701-c1200x701/upload/71/51/87/untitled-design-293.jpg" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+        );
+    }
+}
 
-export default France;
+    export default France;
