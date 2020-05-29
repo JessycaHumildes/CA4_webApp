@@ -34,8 +34,8 @@ class EditTrip extends Component {
                 this.setState({
                     _id: response.data._id,
                     title: response.data.title,
-                    first: response.data.first,
-                    lastName: response.data.lastName,
+                    cityName: response.data.first,
+                    
                     quote: response.data.quote,
                     picture: response.data.picture,
                 });
@@ -88,7 +88,7 @@ class EditTrip extends Component {
                                     </div>
                                 </div>
                                 <div className="field">
-                                    <label className="label"> First Name: </label>
+                                    <label className="label"> City Name: </label>
                                     <div className="control">
                                         <input className="input is-small" type="text" name="first" value={this.state.first} onChange={this.handleChange} id="form" />
                                     </div>
@@ -102,12 +102,7 @@ class EditTrip extends Component {
                             </div>
                             {/*SECOND COLUMN*/}
                             <div className="column">
-                                <div className="field">
-                                    <label className="label"> Last Name: </label>
-                                    <div className="control">
-                                        <input className="input is-small" type="text" name="lastName" value={this.state.lastName} onChange={this.handleChange} id="form" />
-                                    </div>
-                                </div>
+                                
                                 <div className="field">
                                     <label className="label"> Quote: </label>
                                     <div className="control">

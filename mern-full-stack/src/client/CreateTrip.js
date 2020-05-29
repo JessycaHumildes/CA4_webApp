@@ -12,8 +12,7 @@ class CreateTrip extends Component {
         // the form fields are stored in a state
         this.state = { 
             title: '', 
-            first: '', 
-            lastName: '', 
+            cityName: '', 
             quote: '', 
             picture: '' 
         };
@@ -80,12 +79,7 @@ class CreateTrip extends Component {
                         </div>
                         {/*SECOND COLUMN*/}
                         <div className="column">
-                            <div className="field">
-                                <label className="label"> Last Name: </label>
-                                <div className="control">
-                                    <input className="input is-small" type="text" name="lastName" value={this.state.lastName} onChange={this.handleChange} id="form" />
-                                </div>
-                            </div>
+                            
                             <div className="field">
                                 <label className="label"> Quote: </label>
                                 <div className="control">

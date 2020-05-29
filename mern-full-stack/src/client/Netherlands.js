@@ -17,7 +17,7 @@ class Netherlands extends Component {
                             <h2 className="subtitle">The Netherlands</h2>
                         </div>
                         <div className="column">
-                            <img src="https://www.ourescapeclause.com/wp-content/uploads/2019/03/AthensPArthenon7-1170x789.jpg" />
+                            <img src="https://media.farandwide.com/4d/23/4d2304e289da493abd84654a329101ba.jpg" />
                         </div>
                     </div>
                 </div>
