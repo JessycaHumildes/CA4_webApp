@@ -8,7 +8,7 @@ class Trip extends React.Component {
   render() {
     return (
       <div className="column is-4" style={{ padding: "10px" }}>
-        <div className="card has-background-primary" style={{ borderRadius: "10px" }}>
+        <div className="card has-background-light" style={{ borderRadius: "10px" }}>
           <div className="card-image">
             <figure className="image is-4by3">
               <img className="is-rounded" alt="Profile" src={this.props.image} />

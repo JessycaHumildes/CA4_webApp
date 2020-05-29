@@ -15,6 +15,8 @@ class Netherlands extends Component {
                     <div className="columns">
                         <div className="column is-three-fifths">
                             <h2 className="subtitle">The Netherlands</h2>
+                            <h1 className="text">The Netherlands (or Holland) may be a small country, but it's packed with world famous icons. Discover our bulb fields, windmills, cheese markets, wooden shoes, canals of Amsterdam, masterpieces of Old Masters,
+                             Delft Blue earthenware, innovative water-management and millions of bicycles.</h1>
                         </div>
                         <div className="column">
                             <img src="https://media.farandwide.com/4d/23/4d2304e289da493abd84654a329101ba.jpg" />

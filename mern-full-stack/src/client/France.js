@@ -17,9 +17,14 @@ class France extends Component {
                 <div className="hero-body container">
                     <div className="background">
                         <div className="background is-three-fifths">
-                            <h2 className="subtitle">Greece</h2>
+                            <h2 className="subtitle">France</h2>
+                            <h1 className="text">Embrace "joie de vivre" with these fun facts about France.
+                             Turning a baguette upside down is unlucky in France.
+                             The croissant was actually invented in Austria.
+                             France is known as L'Hexagone, ("the hexagon") due to its geometrical shape. ...
+                             French was the official language of England for about 300 years, from 1066 to 1362.</h1>
                         </div>
-                        <div className="background">
+                        <div className="column">
                             <img src="https://blog.rentcars.com/wp-content/uploads/2012/05/franca-paris-e1574190904967.jpg" />
                         </div>
                     </div>
